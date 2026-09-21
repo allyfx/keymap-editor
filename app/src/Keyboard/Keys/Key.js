@@ -30,7 +30,7 @@ function Key(props) {
   const { label, value, params, onUpdate } = props
   const [editing, setEditing] = useState(null)
 
-  const {handleGrabKey, handleDropKey} = useDnd()
+  const {handleGrabKey} = useDnd()
 
   const bind = value
   const behaviour = get(sources.behaviours, bind)

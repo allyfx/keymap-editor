@@ -47,11 +47,8 @@ export function DndContextProvider({ children, handleSwapBind }) {
   return (
     <DndContext.Provider value={{
       handleGrabKey,
-      handleDropKey,
     }}>
       {children}
-
-      {/* Render key following the cursor */}
     </DndContext.Provider>
   )
 }
