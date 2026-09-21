@@ -88,7 +88,6 @@ function Key(props) {
       data-u={size.u}
       data-h={size.h}
       data-dnd={JSON.stringify(dnd)}
-      name="key"
       data-simple={isSimple(normalized)}
       data-long={isComplex(normalized, behaviourParams)}
       style={positioningStyle}
