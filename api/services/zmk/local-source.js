@@ -22,7 +22,7 @@ function loadKeycodes() {
   return JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'zmk-keycodes.json')))
 }
 
-function loadLayout (layout = 'LAYOUT') {
+function loadLayout (layout = 'default_transform') {
   const layoutPath = path.join(ZMK_PATH, 'config', 'info.json')
   return JSON.parse(fs.readFileSync(layoutPath)).layouts[layout].layout
 }
