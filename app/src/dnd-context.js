@@ -36,7 +36,7 @@ export function DndContextProvider({ children, handleSwapBind }) {
     });
 
     return () => {
-      document.removeEventListener("drag", () => {});
+      document.removeEventListener("dragend", () => {});
     };
   }, []);
 
